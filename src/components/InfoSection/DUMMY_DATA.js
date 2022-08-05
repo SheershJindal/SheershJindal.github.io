@@ -1,5 +1,6 @@
 export const homeAbout = {
     id: 'about',
+    to: 'signup',
     lightBg: true,
     lightText: false,
     lightTextDesc: false,
@@ -17,6 +18,7 @@ export const homeAbout = {
 
 export const homeDiscover = {
     id: 'discover',
+    to: 'signup',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,
@@ -34,6 +36,7 @@ export const homeDiscover = {
 
 export const homeServices = {
     id: 'signup',
+    to: '/',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

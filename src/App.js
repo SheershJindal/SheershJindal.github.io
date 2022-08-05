@@ -3,19 +3,16 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom'
 
 import Home from './pages/Home'
 import Header from './components/Header/Header'
-import Login from './pages/Login'
+// import Login from './pages/Login'
 import './App.css'
 import Footer from './components/Footer/Footer'
 
 const App = () => {
   return (<Router className='App'>
     <Header />
-    {/* <Home /> */}
     <Routes>
       <Route path='/'
         element={<Home />} />
-      <Route path='/login'
-        element={<Login />} />
     </Routes>
     <Footer />
   </Router>

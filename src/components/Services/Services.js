@@ -1,6 +1,6 @@
 import React from 'react'
 
-import { ServicesContainer, ServicesH1, ServicesH2, ServicesIcon, ServicesP, ServicesWrapper } from './ServicesElements'
+import { ServicesContainer, ServicesH1, ServicesWrapper } from './ServicesElements'
 import icon1 from '../../images/svg1.svg'
 import icon2 from '../../images/svg2.svg'
 import icon3 from '../../images/svg3.svg'

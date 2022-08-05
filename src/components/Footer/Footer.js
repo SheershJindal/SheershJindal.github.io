@@ -1,4 +1,5 @@
 import React from 'react'
+import { animateScroll as scroll } from 'react-scroll'
 import { FaFacebook } from 'react-icons/fa'
 
 import {
@@ -18,6 +19,10 @@ import {
 } from './FooterElements'
 
 const Footer = () => {
+  const toggleHome = () => {
+    scroll.scrollToTop()
+  }
+
   return (
     <>
       <FooterContainer>
@@ -26,39 +31,39 @@ const Footer = () => {
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/workexample'>How we work</FooterLink>
-                <FooterLink to='/projects'>Projects</FooterLink>
-                <FooterLink to='/careers'>Careers</FooterLink>
-                <FooterLink to='/tos'>Terms of Service  </FooterLink>
+                <FooterLink to='/'>How we work</FooterLink>
+                <FooterLink to='/'>Projects</FooterLink>
+                <FooterLink to='/'>Careers</FooterLink>
+                <FooterLink to='/'>Terms of Service  </FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/workexample'>How we work</FooterLink>
-                <FooterLink to='/projects'>Projects</FooterLink>
-                <FooterLink to='/careers'>Careers</FooterLink>
-                <FooterLink to='/tos'>Terms of Service  </FooterLink>
+                <FooterLink to='/'>How we work</FooterLink>
+                <FooterLink to='/'>Projects</FooterLink>
+                <FooterLink to='/'>Careers</FooterLink>
+                <FooterLink to='/'>Terms of Service  </FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
             <FooterLinksWrapper>
               <FooterLinkItems>
                 <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/workexample'>How we work</FooterLink>
-                <FooterLink to='/projects'>Projects</FooterLink>
-                <FooterLink to='/careers'>Careers</FooterLink>
-                <FooterLink to='/tos'>Terms of Service  </FooterLink>
+                <FooterLink to='/'>How we work</FooterLink>
+                <FooterLink to='/'>Projects</FooterLink>
+                <FooterLink to='/'>Careers</FooterLink>
+                <FooterLink to='/'>Terms of Service  </FooterLink>
               </FooterLinkItems>
               <FooterLinkItems>
                 <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/workexample'>How we work</FooterLink>
-                <FooterLink to='/projects'>Projects</FooterLink>
-                <FooterLink to='/careers'>Careers</FooterLink>
-                <FooterLink to='/tos'>Terms of Service  </FooterLink>
+                <FooterLink to='/'>How we work</FooterLink>
+                <FooterLink to='/'>Projects</FooterLink>
+                <FooterLink to='/'>Careers</FooterLink>
+                <FooterLink to='/'>Terms of Service  </FooterLink>
               </FooterLinkItems>
             </FooterLinksWrapper>
           </FooterLinksContainer>
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to='/'>Wood.work</SocialLogo>
+              <SocialLogo to='/' onClick={toggleHome} >Wood.work</SocialLogo>
               <WebsiteRights>Wood.work &copy; {new Date().getFullYear()}. All rights reserved.</WebsiteRights>
               <SocialIcons>
                 <SocialIconLink href='//facebook.com' target='_blank' aria-label='Facebook'>
