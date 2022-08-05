@@ -1,14 +1,11 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
-import { FaFacebook } from 'react-icons/fa'
+import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
 
 import {
   FooterContainer,
-  FooterLink,
-  FooterLinkItems,
   FooterLinksContainer,
   FooterLinksWrapper,
-  FooterLinkTitle,
   FooterWrap,
   SocialIconLink,
   SocialIcons,
@@ -17,6 +14,8 @@ import {
   SocialMediaWrap,
   WebsiteRights
 } from './FooterElements'
+import FooterColumn from './FooterColumn'
+import { aboutData, siteData, contactData } from './DUMMY_DATA'
 
 const Footer = () => {
   const toggleHome = () => {
@@ -29,36 +28,11 @@ const Footer = () => {
         <FooterWrap>
           <FooterLinksContainer>
             <FooterLinksWrapper>
-              <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/'>How we work</FooterLink>
-                <FooterLink to='/'>Projects</FooterLink>
-                <FooterLink to='/'>Careers</FooterLink>
-                <FooterLink to='/'>Terms of Service  </FooterLink>
-              </FooterLinkItems>
-              <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/'>How we work</FooterLink>
-                <FooterLink to='/'>Projects</FooterLink>
-                <FooterLink to='/'>Careers</FooterLink>
-                <FooterLink to='/'>Terms of Service  </FooterLink>
-              </FooterLinkItems>
+              <FooterColumn data={aboutData} title={'About Us'} />
+              <FooterColumn data={siteData} title={'News and Info'} />
             </FooterLinksWrapper>
             <FooterLinksWrapper>
-              <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/'>How we work</FooterLink>
-                <FooterLink to='/'>Projects</FooterLink>
-                <FooterLink to='/'>Careers</FooterLink>
-                <FooterLink to='/'>Terms of Service  </FooterLink>
-              </FooterLinkItems>
-              <FooterLinkItems>
-                <FooterLinkTitle>About Us</FooterLinkTitle>
-                <FooterLink to='/'>How we work</FooterLink>
-                <FooterLink to='/'>Projects</FooterLink>
-                <FooterLink to='/'>Careers</FooterLink>
-                <FooterLink to='/'>Terms of Service  </FooterLink>
-              </FooterLinkItems>
+              <FooterColumn data={contactData} title={'Contact Us'} />
             </FooterLinksWrapper>
           </FooterLinksContainer>
           <SocialMedia>
@@ -69,14 +43,14 @@ const Footer = () => {
                 <SocialIconLink href='//facebook.com' target='_blank' aria-label='Facebook'>
                   <FaFacebook />
                 </SocialIconLink>
-                <SocialIconLink href='//facebook.com' target='_blank' aria-label='Facebook'>
-                  <FaFacebook />
+                <SocialIconLink href='//instagram.com' target='_blank' aria-label='Indtagram'>
+                  <FaInstagram />
                 </SocialIconLink>
-                <SocialIconLink href='//facebook.com' target='_blank' aria-label='Facebook'>
-                  <FaFacebook />
+                <SocialIconLink href='//twitter.com' target='_blank' aria-label='Twitter'>
+                  <FaTwitter />
                 </SocialIconLink>
-                <SocialIconLink href='//facebook.com' target='_blank' aria-label='Facebook'>
-                  <FaFacebook />
+                <SocialIconLink href='//linkedin.com' target='_blank' aria-label='LinkedIn'>
+                  <FaLinkedin />
                 </SocialIconLink>
               </SocialIcons>
             </SocialMediaWrap>
