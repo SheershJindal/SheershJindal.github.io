@@ -1,29 +1,20 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 import HeroSection from '../components/HeroSection/HeroSection'
 import { homeAbout, homeDiscover, homeServices } from '../components/InfoSection/DUMMY_DATA'
 import InfoSection from '../components/InfoSection/InfoSection'
-import Navbar from '../components/Navbar/Navbar'
-import Sidebar from '../components/Sidebar/Sidebar'
+import Services from '../components/Services/Services'
 
-const Header = () => {
-
-  const [isOpen, setIsOpen] = useState(false)
-
-  const toggleOpen = () => {
-    setIsOpen(!isOpen)
-  }
-
+const Home = () => {
   return (
     <>
-      <Sidebar isOpen={isOpen} toggle={toggleOpen} />
-      <Navbar toggle={toggleOpen} />
       <HeroSection />
       <InfoSection {...homeAbout} />
       <InfoSection {...homeDiscover} />
+      <Services />
       <InfoSection {...homeServices} />
     </>
   )
 }
 
-export default Header
+export default Home

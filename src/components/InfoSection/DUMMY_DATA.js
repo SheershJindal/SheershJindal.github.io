@@ -29,22 +29,22 @@ export const homeDiscover = {
     darkText: false,
     imgStart: true,
     img: require('../../images/svg2.svg').default,
-    alt: 'Woodworker'
+    alt: 'Design'
 }
 
 export const homeServices = {
-    id: 'services',
-    lightBg: true,
-    lightText: false,
-    lightTextDesc: false,
-    topLine: 'Premium Woodworkers',
-    headline: '24/7 available just a click away',
-    description: 'Get access to our exclusive app that allows you to book our woodworkers anytime anywhere.',
-    btnLabel: 'Book Now',
-    dark: false,
-    primary: false,
-    darkText: true,
+    id: 'signup',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Built to last',
+    headline: 'Top quality products',
+    description: 'Forget repairing. Sign up now to get best in class durable products made just for you.',
+    btnLabel: 'Sign Up',
+    dark: true,
+    primary: true,
+    darkText: false,
     imgStart: false,
-    img: require('../../images/svg1.svg').default,
+    img: require('../../images/svg3.svg').default,
     alt: 'Woodworker'
 }
