@@ -1,6 +1,16 @@
 import React from 'react'
 
-import { CloseIcon, Icon, SidebarBtnLink, SidebarBtnWrap, SidebarContainer, SidebarLink, SidebarMenu, SidebarWrapper } from './SidebarElements'
+import {
+  CloseIcon,
+  Icon,
+  SidebarBtnLink,
+  SidebarBtnWrap,
+  SidebarContainer,
+  SidebarLink,
+  SidebarMenu,
+  SidebarWrapper
+} from './SidebarElements'
+import { navbarMenuItemsData } from '../DUMMY_DATA'
 
 const Sidebar = ({ isOpen, toggle }) => {
   return (
@@ -10,10 +20,7 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          <SidebarLink to='about' onClick={toggle}>About</SidebarLink>
-          <SidebarLink to='discover' onClick={toggle}>Discover</SidebarLink>
-          <SidebarLink to='services' onClick={toggle}>Services</SidebarLink>
-          <SidebarLink to='signup' onClick={toggle}>Sign Up</SidebarLink>
+          {navbarMenuItemsData.map(d => <SidebarLink to={d.to} onClick={toggle}>{d.label}</SidebarLink>)}
         </SidebarMenu>
         <SidebarBtnWrap>
           <SidebarBtnLink to='/login'>Login</SidebarBtnLink>

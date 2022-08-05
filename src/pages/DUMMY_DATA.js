@@ -12,7 +12,7 @@ export const homeAbout = {
     primary: false,
     darkText: true,
     imgStart: false,
-    img: require('../../images/svg1.svg').default,
+    img: require('../images/svg1.svg').default,
     alt: 'Woodworker'
 }
 
@@ -30,7 +30,7 @@ export const homeDiscover = {
     primary: true,
     darkText: false,
     imgStart: true,
-    img: require('../../images/svg2.svg').default,
+    img: require('../images/svg2.svg').default,
     alt: 'Design'
 }
 
@@ -48,6 +48,6 @@ export const homeServices = {
     primary: true,
     darkText: false,
     imgStart: false,
-    img: require('../../images/svg3.svg').default,
+    img: require('../images/svg3.svg').default,
     alt: 'Woodworker'
 }

@@ -1,7 +1,7 @@
 import React from 'react'
 
 import HeroSection from '../components/HeroSection/HeroSection'
-import { homeAbout, homeDiscover, homeServices } from '../components/InfoSection/DUMMY_DATA'
+import { homeAbout, homeDiscover, homeServices } from './DUMMY_DATA'
 import InfoSection from '../components/InfoSection/InfoSection'
 import Services from '../components/Services/Services'
 
