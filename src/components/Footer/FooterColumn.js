@@ -6,7 +6,7 @@ const FooterColumn = ({ data, title }) => {
   return (
     <FooterLinkItems>
       <FooterLinkTitle>{title}</FooterLinkTitle>
-      {data.map(d => <FooterLink to={d.to}>{d.label}</FooterLink>)}
+      {data.map((d, index) => <FooterLink key={index} to={d.to}>{d.label}</FooterLink>)}
     </FooterLinkItems>
   )
 }

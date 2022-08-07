@@ -20,10 +20,10 @@ const Sidebar = ({ isOpen, toggle }) => {
       </Icon>
       <SidebarWrapper>
         <SidebarMenu>
-          {navbarMenuItemsData.map(d => <SidebarLink to={d.to} onClick={toggle}>{d.label}</SidebarLink>)}
+          {navbarMenuItemsData.map((d, index) => <SidebarLink key={index} to={d.to} onClick={toggle}>{d.label}</SidebarLink>)}
         </SidebarMenu>
         <SidebarBtnWrap>
-          <SidebarBtnLink to='/login'>Login</SidebarBtnLink>
+          <SidebarBtnLink to='/'>Login</SidebarBtnLink>
         </SidebarBtnWrap>
       </SidebarWrapper>
     </SidebarContainer>

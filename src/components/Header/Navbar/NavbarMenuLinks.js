@@ -6,8 +6,8 @@ import { navbarMenuItemsData } from '../DUMMY_DATA'
 const NavbarMenuLinks = () => {
   return (
     <NavMenu>
-      {navbarMenuItemsData.map(d =>
-        <NavItem>
+      {navbarMenuItemsData.map((d, index) =>
+        <NavItem key={index}>
           <NavLinks
             to={d.to}
             smooth={true}

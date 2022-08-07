@@ -9,7 +9,7 @@ export const navbarMenuItemsData = [
   },
   {
     to: 'services',
-    label: 'Services'
+    label: 'Projects'
   },
   {
     to: 'signup',
