@@ -17,6 +17,14 @@ export const ServicesContainer = styled.div`
   } */
 `
 
+export const ServicesButtonContainer = styled.div`
+  display: flex;
+  margin-top: 20px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+`
+
 export const ServicesWrapper = styled.div`
   max-width: 1000px;
   margin: 0 auto;
