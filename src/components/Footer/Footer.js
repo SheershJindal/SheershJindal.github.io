@@ -1,11 +1,11 @@
 import React from 'react'
 import { animateScroll as scroll } from 'react-scroll'
-import { FaFacebook, FaInstagram, FaLinkedin, FaTwitter } from 'react-icons/fa'
+import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa'
 
 import {
   FooterContainer,
-  FooterLinksContainer,
-  FooterLinksWrapper,
+  // FooterLinksContainer,
+  // FooterLinksWrapper,
   FooterWrap,
   SocialIconLink,
   SocialIcons,
@@ -14,8 +14,9 @@ import {
   SocialMediaWrap,
   WebsiteRights
 } from './FooterElements'
-import FooterColumn from './FooterColumn'
-import { aboutData, siteData, contactData } from './DUMMY_DATA'
+
+// import FooterColumn from './FooterColumn'
+// import { aboutData, siteData, contactData } from './DUMMY_DATA'
 
 const Footer = () => {
   const toggleHome = () => {
@@ -26,7 +27,7 @@ const Footer = () => {
     <>
       <FooterContainer>
         <FooterWrap>
-          <FooterLinksContainer>
+          {/* <FooterLinksContainer>
             <FooterLinksWrapper>
               <FooterColumn data={aboutData} title={'About Us'} />
               <FooterColumn data={siteData} title={'News and Info'} />
@@ -34,23 +35,20 @@ const Footer = () => {
             <FooterLinksWrapper>
               <FooterColumn data={contactData} title={'Contact Us'} />
             </FooterLinksWrapper>
-          </FooterLinksContainer>
+          </FooterLinksContainer> */}
           <SocialMedia>
             <SocialMediaWrap>
-              <SocialLogo to='/' onClick={toggleHome} >Wood.work</SocialLogo>
-              <WebsiteRights>Wood.work &copy; {new Date().getFullYear()}. All rights reserved.</WebsiteRights>
+              <SocialLogo to='/' onClick={toggleHome} >Portfolio</SocialLogo>
+              <WebsiteRights>Developed by Sheersh Jindal.</WebsiteRights>
               <SocialIcons>
-                <SocialIconLink href='//facebook.com' target='_blank' aria-label='Facebook'>
-                  <FaFacebook />
+                <SocialIconLink href='//github.com/SheershJindal/' target='_blank' aria-label='Github'>
+                  <FaGithub />
                 </SocialIconLink>
-                <SocialIconLink href='//instagram.com' target='_blank' aria-label='Indtagram'>
-                  <FaInstagram />
-                </SocialIconLink>
-                <SocialIconLink href='//twitter.com' target='_blank' aria-label='Twitter'>
-                  <FaTwitter />
-                </SocialIconLink>
-                <SocialIconLink href='//linkedin.com' target='_blank' aria-label='LinkedIn'>
+                <SocialIconLink href='//linkedin.com/in/sheershjindal/' target='_blank' aria-label='LinkedIn'>
                   <FaLinkedin />
+                </SocialIconLink>
+                <SocialIconLink href='mailto:sheershjindal@gmail.com' target='_blank' aria-label='Gmail'>
+                  <FaEnvelope />
                 </SocialIconLink>
               </SocialIcons>
             </SocialMediaWrap>

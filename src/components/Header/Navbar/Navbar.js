@@ -6,10 +6,11 @@ import {
   MobileIcon,
   Nav,
   NavbarContainer,
-  NavBtn,
-  NavBtnLink,
+  // NavBtn,
+  // NavBtnLink,
   NavLogo,
 } from './NavbarElements.js'
+
 import NavbarMenuLinks from './NavbarMenuLinks.js'
 
 const Navbar = ({ toggle }) => {
@@ -37,15 +38,15 @@ const Navbar = ({ toggle }) => {
       <Nav scrollNav={scrollNav}>
         <NavbarContainer>
           <NavLogo to='/' onClick={toggleHome}>
-            Wood.work
+            Portfolio
           </NavLogo>
           <MobileIcon onClick={toggle}>
             <FaBars />
           </MobileIcon>
           <NavbarMenuLinks />
-          <NavBtn>
+          {/* <NavBtn>
             <NavBtnLink to='/'>Login</NavBtnLink>
-          </NavBtn>
+          </NavBtn> */}
         </NavbarContainer>
       </Nav>
     </>
