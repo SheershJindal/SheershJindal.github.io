@@ -4,15 +4,15 @@ export const navbarMenuItemsData = [
     label: 'About'
   },
   {
-    to: 'discover',
-    label: 'Discover'
+    to: 'skills',
+    label: 'Tech Stack'
   },
   {
-    to: 'services',
+    to: 'projects',
     label: 'Projects'
   },
   {
-    to: 'signup',
-    label: 'Signup'
+    to: 'resume',
+    label: 'Resume'
   }
 ]

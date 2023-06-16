@@ -1,7 +1,7 @@
 import React from 'react'
 
 import { ServicesContainer, ServicesH1, ServicesWrapper } from './ServicesElements'
-import Service from './Service'
+// import Service from './Service'
 import SliderItem from './Slider/SliderItem'
 import Slider from './Slider/Slider'
 import { SlideData } from './DUMMY_DATA'
@@ -9,7 +9,7 @@ import { SlideData } from './DUMMY_DATA'
 const Services = () => {
   return (
     <>
-      <ServicesContainer id='services'>
+      <ServicesContainer id='projects'>
         <ServicesH1>
           Our Projects
         </ServicesH1>

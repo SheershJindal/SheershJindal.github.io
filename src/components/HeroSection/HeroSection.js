@@ -26,11 +26,11 @@ const HeroSection = () => {
           <VideoBg autoPlay loop muted src={Video} type='video/mp4' />
         </HeroBg>
         <HeroContent>
-          <HeroH1>Woodworking Service at your doorsteps.</HeroH1>
-          <HeroP>Sign up today and get a free check on our next visit.</HeroP>
+          <HeroH1>Sheersh Jindal</HeroH1>
+          <HeroP>Building Immersive Web and Game Experiences that Engage and Inspire</HeroP>
           <HeroBtnWrapper>
             <Button
-              to='signup'
+              to='projects'
               onMouseEnter={onHover}
               onMouseLeave={onHover}
               smooth={true}
