@@ -1,5 +1,6 @@
 export const homeAbout = {
     id: 'about',
+    isLink: true,
     to: 'resume',
     lightBg: true,
     lightText: false,
@@ -18,6 +19,7 @@ export const homeAbout = {
 
 export const homeDiscover = {
     id: 'skills',
+    isLink: true,
     to: 'projects',
     lightBg: false,
     lightText: true,
@@ -36,7 +38,8 @@ export const homeDiscover = {
 
 export const homeServices = {
     id: 'resume',
-    to: 'https://drive.google.com/file/d/1r5Xj1Ux5lsWcOUAsPjB8rkrh8GP3JTPF/view?usp=sharing',
+    isLink: false,
+    href: 'https://drive.google.com/file/d/1r5Xj1Ux5lsWcOUAsPjB8rkrh8GP3JTPF/view?usp=sharing',
     lightBg: false,
     lightText: true,
     lightTextDesc: true,

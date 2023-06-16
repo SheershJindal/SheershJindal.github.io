@@ -14,6 +14,7 @@ import {
   TextWrapper,
   TopLine
 } from './InfoElements'
+import { ButtonLink } from '../utils/ButtonLink'
 
 const InfoSection = ({
   id,
@@ -30,7 +31,9 @@ const InfoSection = ({
   btnLabel,
   primary,
   dark,
-  dark2
+  dark2,
+  isLink,
+  href
 }) => {
   return (
     <>
@@ -43,17 +46,31 @@ const InfoSection = ({
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
                 <BtnWrap>
-                  <Button
-                    to={to}
-                    smooth={true}
-                    duration={500}
-                    spy={true}
-                    exact='true'
-                    offset={-80}
-                    primary={primary ? 1 : 0}
-                    dark={dark ? 1 : 0}
-                    dark2={dark2 ? 1 : 0}
-                  >{btnLabel}</Button>
+                  {isLink ?
+                    <Button
+                      to={to}
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact='true'
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >{btnLabel}</Button>
+                    :
+                    <ButtonLink
+                      href={href}
+                      target='_blank'
+                      smooth={true}
+                      duration={500}
+                      spy={true}
+                      exact='true'
+                      offset={-80}
+                      primary={primary ? 1 : 0}
+                      dark={dark ? 1 : 0}
+                      dark2={dark2 ? 1 : 0}
+                    >{btnLabel}</ButtonLink>}
                 </BtnWrap>
               </TextWrapper>
             </InfoColumn1>
